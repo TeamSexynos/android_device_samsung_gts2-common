@@ -51,6 +51,7 @@ lockscreen.rot_override=true
 # Media
 #media.stagefright.legacyencoder=1
 #media.stagefright.less-secure=1
+debug.stagefright.ccodec=0
 
 # Network
 # Define default initial receive window size in segments.
