@@ -12,6 +12,14 @@ on early-init
     write /proc/sys/vm/page-cluster 0
 	
 on init
+    # RIL <-> audioserver comm
+    chmod 0644 /proc/cmdline
+
+    symlink /dev/block/platform/15540000.dwmmc0/by-name/RADIO /dev/mbin0
+    restorecon /dev/mbin0
+    symlink  /sys/devices/10f24000.mipi-lli /dev/mipi-lli
+    write /sys/module/link_device_lli/parameters/pm_enable 0
+
     # See storage config details at http://source.android.com/tech/storage/
     mkdir /mnt/media_rw/extSdCard 0700 media_rw media_rw
     mkdir /mnt/media_rw/UsbDriveA 0700 media_rw media_rw
