@@ -602,10 +602,10 @@ on charger
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor powersave
 
     # EHCI runtime enable for LPA
-    write /sys/devices/platform/s5p-ehci/power/control auto
+    # write /sys/devices/platform/s5p-ehci/power/control auto
 
     # Do not set any USB mode while charging
-    setprop sys.usb.config charging
+    # setprop sys.usb.config charging
 
 # SENSOR FRAMEWORK : starts fingerprintService
 service vcsFPService /vendor/bin/vcsFPService
