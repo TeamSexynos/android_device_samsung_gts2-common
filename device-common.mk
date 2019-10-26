@@ -208,6 +208,10 @@ PRODUCT_PACKAGES += \
     libandroid_net \
     netutils-wrapper-1.0
 
+# OpenGApps
+TARGET_GAPPS_ARCH := arm
+GAPPS_VARIANT := stock
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     device/samsung/gts2-common/overlay \
