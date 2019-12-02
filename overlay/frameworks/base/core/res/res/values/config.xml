@@ -175,4 +175,8 @@
 	
     <!-- Disable lockscreen rotation by default -->
     <bool name="config_enableLockScreenRotation">true</bool>
+
+    <!-- Whether to post reset runnable for all clients. Needed for some older
+        vendor fingerprint HAL implementations. -->
+    <bool name="config_fingerprintPostResetRunnableForAllClients">true</bool>
 </resources>
