@@ -60,12 +60,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/camera/external_camera_config.xml:system/vendor/etc/external_camera_config.xml
 
-# Charger
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    lineage_charger_res_images \
-    charger
-
 # Codecs
 PRODUCT_PACKAGES += \
     libstagefrighthw \
