@@ -203,7 +203,7 @@ TARGET_SYSTEM_PROP += $(LOCAL_PATH)/system.prop
 
 # Recovery
 BOARD_HAS_DOWNLOAD_MODE := true
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.universal5433
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.universal5433.recovery
 
 # SELinux
 #BOARD_SEPOLICY_DIRS += device/samsung/gts2-common/sepolicy
