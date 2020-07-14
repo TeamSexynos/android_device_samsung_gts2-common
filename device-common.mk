@@ -131,16 +131,13 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 PRODUCT_AAPT_PREBUILT_DPI := hdpi mdpi
 
 PRODUCT_PACKAGES += \
-    libion \
-    libfimg \
-    hwcomposer.exynos5
-
-PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.1-impl \
-    android.hardware.graphics.composer@2.1-service \
-    android.hardware.graphics.mapper@2.0-impl
+    android.hardware.graphics.mapper@2.0-impl \
+    libion \
+    hwcomposer.exynos5 \
+    libfimg
 
 # Healthd
 #PRODUCT_PACKAGES += \
@@ -168,7 +165,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.universal5433
+    android.hardware.light@2.0-service.samsung
 
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
