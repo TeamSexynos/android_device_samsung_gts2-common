@@ -288,7 +288,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwpa_client \
     wpa_supplicant \
-    wpa_supplicant.conf \
     wificond \
     wifilogd \
     wlutil
@@ -298,7 +297,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-    $(COMMON_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+    $(COMMON_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf
 
 # Vendor
 $(call inherit-product, vendor/samsung/gts2-common/gts2-common-vendor.mk)
