@@ -113,7 +113,7 @@ PRODUCT_PACKAGES += \
     libsensor_shim
 
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl.s2 \
+    android.hardware.gnss@1.0-impl \
     android.hardware.gnss@1.0-service
 
 PRODUCT_COPY_FILES += \
