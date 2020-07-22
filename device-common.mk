@@ -132,6 +132,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-impl \
     android.hardware.graphics.mapper@2.0-impl \
     libion \
+    gralloc.exynos5 \
     hwcomposer.exynos5 \
     libfimg
 
