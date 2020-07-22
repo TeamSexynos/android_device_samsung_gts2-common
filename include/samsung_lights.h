@@ -19,6 +19,14 @@
 #define SAMSUNG_LIGHTS_H
 
 /*
+ * Workarounds
+ *
+ * Enable the Exynos5433 workaround for key brightness
+ *
+ */
+#define EXYNOS5433 1
+
+/*
  * Board specific nodes
  *
  * If your kernel exposes these controls in another place, you can either
