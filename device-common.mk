@@ -126,15 +126,17 @@ PRODUCT_AAPT_CONFIG := xlarge
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 PRODUCT_AAPT_PREBUILT_DPI := hdpi mdpi
 
+# Graphics
 PRODUCT_PACKAGES += \
+    gralloc.exynos5 \
+    hwcomposer.exynos5 \
+    libion \
+    libfimg \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.1-impl \
     android.hardware.graphics.mapper@2.0-impl \
-    libion \
-    gralloc.exynos5 \
-    hwcomposer.exynos5 \
-    libfimg
+    libhwc2on1adapter
 
 # Healthd
 #PRODUCT_PACKAGES += \
