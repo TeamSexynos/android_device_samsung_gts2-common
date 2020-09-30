@@ -248,6 +248,7 @@ PRODUCT_PACKAGES += \
     init.samsung.rc \
     init.wifi.rc \
     init.power.rc \
+    ueventd.universal5433.rc \
     sswap
 
 # RenderScript HAL
