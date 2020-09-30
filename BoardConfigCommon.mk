@@ -157,7 +157,7 @@ DEVICE_MANIFEST_FILE := device/samsung/gts2-common/configs/manifest.xml
 BOARD_HDMI_INCAPABLE := true
 
 # HWCServices
-BOARD_USES_HWC_SERVICES := true
+#BOARD_USES_HWC_SERVICES := true
 SKIP_DISPLAY_BLANK_CTRL := true
 
 # Include path
