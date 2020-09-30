@@ -154,9 +154,7 @@ TARGET_USES_ION := true
 DEVICE_MANIFEST_FILE := device/samsung/gts2-common/configs/manifest.xml
 
 # HDMI
-BOARD_USES_NEW_HDMI := true
-BOARD_USES_GSC_VIDEO := true
-BOARD_USES_CEC := true
+BOARD_HDMI_INCAPABLE := true
 
 # HWCServices
 BOARD_USES_HWC_SERVICES := true
