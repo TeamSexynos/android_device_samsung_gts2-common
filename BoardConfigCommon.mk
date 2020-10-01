@@ -19,9 +19,6 @@ TARGET_BOARD_PLATFORM := exynos5
 TARGET_SLSI_VARIANT := bsp
 TARGET_SOC := exynos5433
 
-# big.LITTLE load balancing
-#ENABLE_CPUSETS := true
-
 TARGET_BOOTLOADER_BOARD_NAME := universal5433
 
 # Audio
@@ -65,7 +62,7 @@ LZMA_RAMDISK_TARGETS := boot,recovery
 
 BOARD_ROOT_EXTRA_FOLDERS += efs
 TARGET_FS_CONFIG_GEN := $(LOCAL_PATH)/config.fs
-	
+
 BUILD_BROKEN_DUP_RULES := true
 
 ### KERNEL
@@ -118,10 +115,6 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 CHARGING_ENABLED_PATH := /sys/class/power_supply/battery/batt_lp_charging
 BACKLIGHT_PATH := "/sys/class/backlight/panel/brightness"
 
-# dex pre-optimizations
-#WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := false
-#WITH_DEXPREOPT := false
-
 # FIMG2D
 BOARD_USES_SKIA_FIMGAPI := true
 BOARD_USES_NEON_BLITANTIH := true
@@ -158,7 +151,6 @@ DEVICE_MANIFEST_FILE := device/samsung/gts2-common/configs/manifest.xml
 BOARD_HDMI_INCAPABLE := true
 
 # HWCServices
-#BOARD_USES_HWC_SERVICES := true
 SKIP_DISPLAY_BLANK_CTRL := true
 
 # Include path
@@ -172,7 +164,6 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
 TARGET_PROVIDES_LIBLIGHT := false
 
 # OpenMAX Video
-#BOARD_USE_STOREMETADATA := true
 BOARD_USE_METADATABUFFERTYPE := true
 BOARD_USE_DMA_BUF := true
 BOARD_USE_ANB_OUTBUF_SHARE := true
@@ -184,42 +175,31 @@ BOARD_USE_QOS_CTRL := false
 BOARD_USE_S3D_SUPPORT := true
 BOARD_USE_VP8ENC_SUPPORT := true
 
-# Video scaling issue workaround
-#TARGET_OMX_LEGACY_RESCALING := true
-
 # Power
 TARGET_POWERHAL_VARIANT := samsung
 
 # Properties
 TARGET_SYSTEM_PROP += $(LOCAL_PATH)/system.prop
 
-# Properties
-#TARGET_VENDOR_PROP_OVERRIDE := true
-#TARGET_VENDOR_PROP += device/samsung/gts2-common/vendor.prop
-
 # Recovery
 BOARD_HAS_DOWNLOAD_MODE := true
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.universal5433.recovery
 
 # SELinux
-#BOARD_SEPOLICY_DIRS += device/samsung/gts2-common/sepolicy
 SELINUX_IGNORE_NEVERALLOWS := true
-
-# Sensors
-#TARGET_NO_SENSOR_PERMISSION_CHECK := true
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libbauthserver.so|libbauthtzcommon_shim.so \
     /system/vendor/lib/libexynoscamera.so|libexynoscamera_shim.so \
     /system/vendor/bin/gpsd|libsensor_shim.so
-	
+
 # Legacy BLOB Support
 TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /system/vendor/bin/hw/rild=27
-	
+
 # Network Routing
-TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE := true	
+TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE := true
 
 # WFD
 BOARD_USES_WFD := true
@@ -236,11 +216,4 @@ BOARD_HOSTAPD_PRIVATE_LIB        := lib_driver_cmd_bcmdhd
 WIFI_DRIVER_FW_PATH_PARAM        := "/sys/module/dhd/parameters/firmware_path"
 WIFI_DRIVER_FW_PATH_STA          := "/vendor/etc/wifi/bcmdhd_sta.bin"
 WIFI_DRIVER_FW_PATH_AP           := "/vendor/etc/wifi/bcmdhd_apsta.bin"
-#WIFI_BAND                        := 802_11_ABG
 WPA_SUPPLICANT_USE_HIDL          := true
-
-# WiFi Configs
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:system/vendor/etc/wifi/wpa_supplicant_overlay.conf \
-	$(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:system/vendor/etc/wifi/p2p_supplicant_overlay.conf
-

@@ -21,13 +21,10 @@ PRODUCT_PACKAGES += \
     audio.primary.universal5433 \
     libtinycompress
 
-#PRODUCT_PACKAGES += \
-#	libseirenhw
-
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
     android.hardware.audio.effect@2.0-impl
-	
+
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/audio/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf \
     $(COMMON_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -68,10 +65,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-impl \
     android.hardware.configstore@1.1-service
-
-# Display
-#PRODUCT_PACKAGES += \
-#   AdvancedDisplay
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -118,11 +111,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl \
     libhwc2on1adapter
 
-# Healthd
-#PRODUCT_PACKAGES += \
-#    android.hardware.health@1.0-impl \
-#    android.hardware.health@1.0-service
-
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
@@ -165,10 +153,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl
-
-# MobiCore
-#PRODUCT_PACKAGES += \
-#   mcDriverDaemon
 
 # Net
 PRODUCT_PACKAGES += \
