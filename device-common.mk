@@ -251,16 +251,14 @@ PRODUCT_PACKAGES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    macloader \
     wifiloader \
     hostapd \
-    libwpa_client \
-    wpa_supplicant \
     wificond \
     wifilogd \
-    wlutil
-
-PRODUCT_PACKAGES += \
+    wlutil \
+    libwpa_client \
+    wpa_supplicant \
+    wpa_supplicant.conf \
     android.hardware.wifi@1.0-service.legacy
 
 PRODUCT_COPY_FILES += \
