@@ -234,9 +234,6 @@ TARGET_LD_SHIM_LIBS += \
     /system/lib/omx/libOMX.Exynos.VP9.Decoder.so|libui_shim.so \
     /system/lib/omx/libOMX.Exynos.WMV.Decoder.so|libui_shim.so
 
-# Virtual Display
-BOARD_USES_VIRTUAL_DISPLAY := true
-
 # WFD
 BOARD_USES_WFD := true
 
