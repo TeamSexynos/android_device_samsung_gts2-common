@@ -21,20 +21,14 @@ debug.sf.enable_gl_backpressure=1
 lockscreen.rot_override=true
 
 # Media
-#media.stagefright.legacyencoder=1
-#media.stagefright.less-secure=1
 debug.stagefright.ccodec=0
-
-# Network
-# Define default initial receive window size in segments.
-#net.tcp.default_init_rwnd=60
 
 # WiFi
 wifi.interface=wlan0
 wifi.direct.non-concurrent=true
 wifi.direct.interface=p2p-dev-wlan0
 
-#Treble
+# Treble
 persist.media.treble_omx=false
 
 # sdcardfs
