@@ -31,9 +31,6 @@ wifi.direct.interface=p2p-dev-wlan0
 # Treble
 persist.media.treble_omx=false
 
-# sdcardfs
-ro.sys.sdcardfs=1
-
 # Boot directly from charger mode
 ro.enable_boot_charger_mode=1
 
