@@ -190,6 +190,7 @@ SELINUX_IGNORE_NEVERALLOWS := true
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
+    /system/bin/mediaserver|/system/lib/libstagefright_shim.so \
     /system/vendor/lib/libbauthserver.so|libbauthtzcommon_shim.so \
     /system/vendor/lib/libexynoscamera.so|libexynoscamera_shim.so \
     /system/vendor/bin/gpsd|libsensor_shim.so
